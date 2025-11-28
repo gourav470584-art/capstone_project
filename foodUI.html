@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Foodie - Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="https://png.pngtree.com/png-clipart/20250103/original/pngtree-food-icon-design-vector-png-image_3645463.png"
+                    alt="Foodie logo" class="logo" />
+                <h1>Foodie</h1>
+            </div>
+
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#restaurants">Restaurants</a></li>
+                    <li><a href="#offers">Offers</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-outline">Login</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- HERO / BANNER -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h2>Delicious food, delivered to you</h2>
+                    <p>Order from your favorite restaurants and get food delivered fast, fresh, and hot.</p>
+
+                    <form class="search-form" role="search" aria-label="Find food">
+                        <input type="text" name="q" placeholder="Enter your location or dish"
+                            aria-label="Search location or dish" required />
+                        <select aria-label="Category filter">
+                            <option value="">All categories</option>
+                            <option>Pizza</option>
+                            <option>Burgers</option>
+                            <option>Sushi</option>
+                            <option>Indian</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="hero-image" aria-hidden="true">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/delicious-food-banner-template-design-cd3994e39458960f4f33e73b8c60edb9_screen.jpg?ts=1645769305"
+                        alt="Delicious food plate" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CATEGORIES -->
+        <section id="categories" class="section container">
+            <h3 class="section-title">Browse by Category</h3>
+            <ul class="categories-grid" aria-label="Food categories">
+                <li class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png"
+                        alt=""><span>Pizza</span></li>
+                <li class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png"
+                        alt=""><span>Burgers</span></li>
+                <li class="cat-card"><img src="https://cdn-icons-png.flaticon.com/512/2252/2252075.png"
+                        alt=""><span>Sushi</span></li>
+                <li class="cat-card"><img
+                        src="https://imgs.search.brave.com/G0Lyc0Di9N6oFDkSKiNn6gSBJDK1hV1AsrlJpFSNZas/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvdHJh/ZGl0aW9uYWwtaW5k/aWFuLWZvb2QtaW4t/ZmxhdC1sYXktcGhv/dG9ncmFwaC1sODA4/aTJkZTJqMmJhY2Rp/LmpwZw"
+                        alt=""><span>Indian</span></li>
+                <li class="cat-card"><img
+                        src="https://imgs.search.brave.com/V_c3OEz-kOR5VwcdFT9i4F6Y5ZPNr0Su43QHlFQRbs0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cHJlcGFyZWRmb29k/cGhvdG9zLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvQ3Jpc3BB/cHBsZVdoaXBwZWRD/cmVhbTAwMV9BREwt/Mi0zMDB4MzAwLmpw/Zy53ZWJw"
+                        alt=""><span>Dessert</span></li>
+                <li class="cat-card"><img
+                        src="https://imgs.search.brave.com/BRHYgy8Cb8teMb-sMvzBa1ZQa0ZNoKjKzc94_cJxnaI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAzLzQxLzE1LzUz/LzM2MF9GXzM0MTE1/NTM1M183Y0VSNnJw/Mm1CcFREbXFGUUlJ/T3M0NFM2Snpybm5U/bC5qcGc"
+                        alt=""><span>Drinks</span></li>
+            </ul>
+        </section>
+
+        <!-- FEATURED RESTAURANTS -->
+        <section id="restaurants" class="section bg-light">
+            <div class="container">
+                <div class="section-head">
+                    <h3 class="section-title">Featured Restaurants</h3>
+                    <div class="filters">
+                        <label>Sort:
+                            <select aria-label="Sort restaurants">
+                                <option>Recommended</option>
+                                <option>Rating</option>
+                                <option>Delivery time</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="restaurants-grid">
+                    <!-- card 1 -->
+                    <article class="restaurant-card">
+                        <img src="https://fruitbasket.limepack.com/blog/wp-content/uploads/2024/06/rustic-wooden-interior-in-pizzeria-restaurant.jpg"
+                            alt="Pizza Palace interior">
+                        <div class="card-body">
+                            <h4>Pizza Palace</h4>
+                            <p class="muted">Italian • 4.7 (1.2k) • 30-40 min</p>
+                            <div class="card-footer">
+                                <span class="price">₹250 for two</span>
+                                <button class="btn btn-outline small">View Menu</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 2 -->
+                    <article class="restaurant-card">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/41652b66811953.5b22ce329a86a.jpg"
+                            alt="Burger Hub image">
+                        <div class="card-body">
+                            <h4>Burger Hub</h4>
+                            <p class="muted">American • 4.5 (900) • 25-35 min</p>
+                            <div class="card-footer">
+                                <span class="price">₹300 for two</span>
+                                <button class="btn btn-outline small">View Menu</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 3 -->
+                    <article class="restaurant-card">
+                        <img src="https://images.adsttc.com/media/images/5b22/d9cf/f197/ccfa/2700/010f/large_jpg/06075_140925-002D.jpg?1529010631="
+                            alt="Sushi World image">
+                        <div class="card-body">
+                            <h4>Sushi World</h4>
+                            <p class="muted">Japanese • 4.6 (720) • 35-45 min</p>
+                            <div class="card-footer">
+                                <span class="price">₹500 for two</span>
+                                <button class="btn btn-outline small">View Menu</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- card 4 -->
+                    <article class="restaurant-card">
+                        <img src="https://i.pinimg.com/736x/c1/00/10/c10010ea3d2db748cf5ff2410758ae01.jpg"
+                            alt="Spice Route image">
+                        <div class="card-body">
+                            <h4>Spice Route</h4>
+                            <p class="muted">Indian • 4.8 (1.5k) • 30-40 min</p>
+                            <div class="card-footer">
+                                <span class="price">₹350 for two</span>
+                                <button class="btn btn-outline small">View Menu</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMO & OFFERS -->
+        <section id="offers" class="section container">
+            <h3 class="section-title">Promo Offers</h3>
+            <div class="offers-grid">
+                <div class="offer-card">Get 30% OFF on your first order</div>
+                <div class="offer-card">Free delivery on orders above ₹499</div>
+                <div class="offer-card">Buy 1 Get 1 Free on selected burgers</div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section id="testimonials" class="section bg-light">
+            <div class="container">
+                <h3 class="section-title">What Our Customers Say</h3>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"Fast delivery, hot food and great packaging!"</p>
+                        <cite>- Neha R.</cite>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"Tasty dishes and friendly support. Highly recommended."</p>
+                        <cite>- Raj P.</cite>
+                    </blockquote>
+
+                    <blockquote class="testimonial">
+                        <p>"Wide variety and easy ordering experience."</p>
+                        <cite>- Anjali K.</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT / SUBSCRIBE FORM -->
+        <aside class="section container contact">
+            <h3 class="section-title">Stay in the loop</h3>
+            <form class="subscribe-form" aria-label="Subscribe to newsletter">
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="you@example.com" required>
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="brand small">
+                <img src=""
+                    alt="Foodie logo">
+                <strong>Foodie</strong>
+            </div>
+
+            <nav aria-label="Footer navigation">
+                <ul class="footer-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </nav>
+
+            <div class="social">
+                <span aria-hidden="true">© 2025 Foodie</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
